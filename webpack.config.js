@@ -8,6 +8,13 @@ module.exports = {
         path: path.resolve(__dirname, "dist")
     },
     mode: process.env.NODE_ENV === "prod" ? "production" : "development",
+    // This is to spin dev server with support of HOT reload
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
+        port: 3000
+    },
     /**
      * 1. Transformation - Diffrent dilects of JS can be transformed using dedicated transformers like babel
      * 2. Loaders - Can include stylesheets, css-loader to include external css and style-loader to inject as style tag
