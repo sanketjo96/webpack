@@ -1,0 +1,19 @@
+{
+  "name": "webpack-basic",
+  "version": "1.0.0",
+  "description": "Learnigs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
